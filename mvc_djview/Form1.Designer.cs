@@ -34,8 +34,8 @@
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtCurrentBPM = new System.Windows.Forms.TextBox();
             this.pnlColor = new System.Windows.Forms.Panel();
+            this.txtCurrentBPM = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -56,6 +56,7 @@
             this.txtBPM.Name = "txtBPM";
             this.txtBPM.Size = new System.Drawing.Size(161, 20);
             this.txtBPM.TabIndex = 1;
+            this.txtBPM.Text = "120";
             // 
             // btnSet
             // 
@@ -96,19 +97,20 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "DJ View";
             // 
+            // pnlColor
+            // 
+            this.pnlColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(103)))), ((int)(((byte)(137)))));
+            this.pnlColor.Location = new System.Drawing.Point(36, 69);
+            this.pnlColor.Name = "pnlColor";
+            this.pnlColor.Size = new System.Drawing.Size(273, 39);
+            this.pnlColor.TabIndex = 1;
+            // 
             // txtCurrentBPM
             // 
             this.txtCurrentBPM.Location = new System.Drawing.Point(127, 33);
             this.txtCurrentBPM.Name = "txtCurrentBPM";
             this.txtCurrentBPM.Size = new System.Drawing.Size(93, 20);
             this.txtCurrentBPM.TabIndex = 0;
-            // 
-            // pnlColor
-            // 
-            this.pnlColor.Location = new System.Drawing.Point(74, 69);
-            this.pnlColor.Name = "pnlColor";
-            this.pnlColor.Size = new System.Drawing.Size(200, 39);
-            this.pnlColor.TabIndex = 1;
             // 
             // Form1
             // 
@@ -120,6 +122,7 @@
             this.Controls.Add(this.btnStop);
             this.Name = "Form1";
             this.Text = "MVC Dj View";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
