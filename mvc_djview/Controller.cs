@@ -17,9 +17,30 @@ namespace mvc_djview
             _model = new Model();
         }
 
-        public void Load()
+        public int BeatPerSecond
         {
-            _view.BeatPerSecond = _model.BeatsPerSecond;
+            get { return _model.BeatsPerSecond; }
+            set { _model.BeatsPerSecond = value; }
+        }
+
+        public void Subscriber(IBeatable beatable)
+        {
+            _model.Subscribe(beatable);
+        }
+
+        public void Unsubscribe(IBeatable beatable)
+        {
+            _model.Unsubscribe(beatable);
+        }
+
+        public void Stop()
+        {
+            _model.Stop();
+        }
+
+        public void Start()
+        {
+            _model.Start();
         }
     }
 }

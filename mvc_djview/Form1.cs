@@ -14,21 +14,28 @@ namespace mvc_djview
             _controller = new Controller(this);
         }
 
-        public int BeatPerSecond
+        private void btnSet_Click(object sender, EventArgs e)
         {
-            get { return Convert.ToInt32(txtBPM.Text); }
-            set { txtBPM.Text = value.ToString(CultureInfo.InvariantCulture); }
+            _controller.BeatPerSecond = int.Parse(txtBPM.Text);
+            _controller.Start();
         }
 
-        public int CurrentBeatPerSecond
+        private void btnStop_Click(object sender, EventArgs e)
         {
-            get { return Convert.ToInt32(txtCurrentBPM.Text); }
-            set { txtBPM.Text = value.ToString(CultureInfo.InvariantCulture); }
+            _controller.Stop();
+        }
+
+        private void trkBeat_Scroll(object sender, EventArgs e)
+        {
+            _controller.BeatPerSecond = trkBeat.Value;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            _controller.Load();
+            _controller.Subscriber(pnlColor);
+            _controller.Subscriber(txtBPM);
+            _controller.Subscriber(txtCurrentBPM);
+            
         }
     }
 }

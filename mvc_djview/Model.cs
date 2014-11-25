@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Timers;
 
@@ -41,7 +42,8 @@ namespace mvc_djview
         private void OnBeat(BeatEventArgs args)
         {
             //fire event BeatChanged
-            BeatChanged(this, args);
+            if (BeatChanged != null)
+                BeatChanged(this, args);
         }
 
         public void Start()
@@ -60,17 +62,23 @@ namespace mvc_djview
             try
             {
                 // old XP support
-                Console.Beep(2000, 10);
+                //Console.Beep(2000, 10);
 
                 // Vista / Windows 7 support
-                System.Media.SystemSounds.Beep.Play();
+                SystemSounds.Beep.Play();
+                
             }
             catch { } // Do nothing
         }
 
-        public void Register()
+        public void Subscribe(IBeatable beatable)
         {
-            
+            BeatChanged += beatable.HandleBeat;
+        }
+
+        public void Unsubscribe(IBeatable beatable)
+        {
+            BeatChanged -= beatable.HandleBeat;
         }
     }
 }
