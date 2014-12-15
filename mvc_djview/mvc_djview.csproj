@@ -67,7 +67,8 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="IBeatable.cs" />
-    <Compile Include="Model.cs" />
+    <Compile Include="ModelBo.cs" />
+    <Compile Include="PresenterModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

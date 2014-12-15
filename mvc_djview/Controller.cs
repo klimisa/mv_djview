@@ -1,46 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-
-namespace mvc_djview
+﻿namespace mvc_djview
 {
     public class Controller
     {
         private readonly Form1 _view;
-        private readonly Model _model;
+        private readonly PresenterModel _presenterModel;
 
         public Controller(Form1 view)
         {
             _view = view;
-            _model = new Model();
+            _presenterModel = new PresenterModel();
         }
 
         public int BeatPerSecond
         {
-            get { return _model.BeatsPerSecond; }
-            set { _model.BeatsPerSecond = value; }
+            get { return _presenterModel.BeatsPerSecond; }
+            set { _presenterModel.BeatsPerSecond = value; }
         }
 
         public void Subscriber(IBeatable beatable)
         {
-            _model.Subscribe(beatable);
+            _presenterModel.Subscribe(beatable);
         }
 
         public void Unsubscribe(IBeatable beatable)
         {
-            _model.Unsubscribe(beatable);
+            _presenterModel.Unsubscribe(beatable);
         }
 
         public void Stop()
         {
-            _model.Stop();
+            _presenterModel.Stop();
         }
 
         public void Start()
         {
-            _model.Start();
+            _presenterModel.Start();
         }
     }
 }

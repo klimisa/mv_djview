@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mvc_djview", "mvc_djview\mvc_djview.csproj", "{7A219082-2806-49A1-9798-1B2536DA9708}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mvp_djview", "mvp_djview\mvp_djview.csproj", "{7219119B-1274-44B5-B06A-BAA52A876253}"
@@ -9,20 +11,42 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mvvm_djview", "mvvm_djview\
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A219082-2806-49A1-9798-1B2536DA9708}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{7A219082-2806-49A1-9798-1B2536DA9708}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{7A219082-2806-49A1-9798-1B2536DA9708}.Debug|Mixed Platforms.Build.0 = Debug|x86
 		{7A219082-2806-49A1-9798-1B2536DA9708}.Debug|x86.ActiveCfg = Debug|x86
 		{7A219082-2806-49A1-9798-1B2536DA9708}.Debug|x86.Build.0 = Debug|x86
+		{7A219082-2806-49A1-9798-1B2536DA9708}.Release|Any CPU.ActiveCfg = Release|x86
+		{7A219082-2806-49A1-9798-1B2536DA9708}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{7A219082-2806-49A1-9798-1B2536DA9708}.Release|Mixed Platforms.Build.0 = Release|x86
 		{7A219082-2806-49A1-9798-1B2536DA9708}.Release|x86.ActiveCfg = Release|x86
 		{7A219082-2806-49A1-9798-1B2536DA9708}.Release|x86.Build.0 = Release|x86
+		{7219119B-1274-44B5-B06A-BAA52A876253}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{7219119B-1274-44B5-B06A-BAA52A876253}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{7219119B-1274-44B5-B06A-BAA52A876253}.Debug|Mixed Platforms.Build.0 = Debug|x86
 		{7219119B-1274-44B5-B06A-BAA52A876253}.Debug|x86.ActiveCfg = Debug|x86
 		{7219119B-1274-44B5-B06A-BAA52A876253}.Debug|x86.Build.0 = Debug|x86
+		{7219119B-1274-44B5-B06A-BAA52A876253}.Release|Any CPU.ActiveCfg = Release|x86
+		{7219119B-1274-44B5-B06A-BAA52A876253}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{7219119B-1274-44B5-B06A-BAA52A876253}.Release|Mixed Platforms.Build.0 = Release|x86
 		{7219119B-1274-44B5-B06A-BAA52A876253}.Release|x86.ActiveCfg = Release|x86
 		{7219119B-1274-44B5-B06A-BAA52A876253}.Release|x86.Build.0 = Release|x86
+		{3F578549-7367-4F4C-BDDA-201EE7597644}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{3F578549-7367-4F4C-BDDA-201EE7597644}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{3F578549-7367-4F4C-BDDA-201EE7597644}.Debug|Mixed Platforms.Build.0 = Debug|x86
 		{3F578549-7367-4F4C-BDDA-201EE7597644}.Debug|x86.ActiveCfg = Debug|x86
 		{3F578549-7367-4F4C-BDDA-201EE7597644}.Debug|x86.Build.0 = Debug|x86
+		{3F578549-7367-4F4C-BDDA-201EE7597644}.Release|Any CPU.ActiveCfg = Release|x86
+		{3F578549-7367-4F4C-BDDA-201EE7597644}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{3F578549-7367-4F4C-BDDA-201EE7597644}.Release|Mixed Platforms.Build.0 = Release|x86
 		{3F578549-7367-4F4C-BDDA-201EE7597644}.Release|x86.ActiveCfg = Release|x86
 		{3F578549-7367-4F4C-BDDA-201EE7597644}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection

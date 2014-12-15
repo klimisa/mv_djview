@@ -5,7 +5,7 @@ namespace mvc_djview
 {
     public partial class BeatPanel : Panel, IBeatable
     {
-        public void HandleBeat(Model sender, BeatEventArgs e)
+        public void HandleBeat(PresenterModel sender, BeatEventArgs e)
         {
             var red = 255;
             var green = 255 - e.BeatsPerSecond;

@@ -2,6 +2,6 @@
 {
     public interface IBeatable
     {
-        void HandleBeat(Model sender, BeatEventArgs e);
+        void HandleBeat(PresenterModel sender, BeatEventArgs e);
     }
 }
